@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First-Person Explorer Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="overlay">
+      <h1>First-Person Explorer</h1>
+      <p>Click to start. Move with WASD, look with mouse, jump with Space, interact with E.</p>
+      <button id="startButton">Start Exploring</button>
+    </div>
+
+    <div id="crosshair">+</div>
+
+    <div id="hud">
+      <div>Nearby object: <span id="targetName">None</span></div>
+      <div id="hint">Walk up to glowing objects and press E.</div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
