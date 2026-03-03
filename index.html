@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Hunt Snake</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="panel">
+      <h1>Word Hunt Snake</h1>
+      <p class="subtitle">Eat words that match your target category. Avoid the others.</p>
+
+      <label for="modeSelect">Choose a category challenge:</label>
+      <select id="modeSelect"></select>
+
+      <div class="stats">
+        <p><strong>Target:</strong> <span id="targetLabel">-</span></p>
+        <p><strong>Score:</strong> <span id="score">0</span></p>
+        <p><strong>Best:</strong> <span id="best">0</span></p>
+      </div>
+
+      <ul class="rules">
+        <li>Arrow keys or WASD to move.</li>
+        <li>Correct word: +1 point, snake grows.</li>
+        <li>Wrong word: -1 point, you shrink.</li>
+        <li>Crash into wall or yourself and the run ends.</li>
+      </ul>
+
+      <button id="restartBtn" type="button">Restart</button>
+      <p id="message" aria-live="polite"></p>
+    </section>
+
+    <section class="board-wrap">
+      <canvas id="game" width="600" height="600" aria-label="Snake game board"></canvas>
+      <div id="wordBadge" class="word-badge"></div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
